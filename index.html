@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+  <title>The Hidden Self — Discover Your Inner World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" id="homeLink">
+      <span class="brand-icon">✳</span> THE HIDDEN SELF
+    </a>
+    <span class="top-note">AN INNER WORLD EXPERIMENT</span>
+  </header>
+
+  <main class="shell">
+    <section class="screen welcome" id="welcome">
+      <div class="orb" aria-hidden="true">
+        <div class="orb-ring ring-one"></div>
+        <div class="orb-ring ring-two"></div>
+        <div class="orb-core">✦</div>
+      </div>
+
+      <p class="eyebrow"><span></span> A JOURNEY INTO THE UNKNOWN <span></span></p>
+      <h1>Meet the person<br>you <em>haven't met yet.</em></h1>
+      <p class="intro-copy">
+        Behind every thought is a mystery. Behind every choice,
+        a little more of you. Follow your instincts and discover
+        the hidden world within.
+      </p>
+
+      <button class="primary-btn" id="startBtn">
+        Begin the journey <span>↗</span>
+      </button>
+
+      <div class="welcome-meta">
+        <span>◈ 7 QUESTIONS</span>
+        <span>◈ 4 PERSONALITY ARCHETYPES</span>
+        <span>◈ NO WRONG ANSWERS</span>
+      </div>
+    </section>
+
+    <section class="screen quiz-screen" id="quiz" hidden>
+      <div class="quiz-heading">
+        <div>
+          <p class="eyebrow">YOUR STORY UNFOLDS</p>
+          <p class="step-label" id="stepLabel">QUESTION 01 / 07</p>
+        </div>
+        <div class="question-symbol" id="questionSymbol">✧</div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <p class="question-category" id="questionCategory">THE UNKNOWN</p>
+      <h2 class="question-title" id="questionTitle"></h2>
+      <p class="question-hint">Choose what feels most like you.</p>
+
+      <div class="answer-grid" id="answerGrid"></div>
+
+      <div class="quiz-footer">
+        <button class="text-btn" id="backBtn">← Previous</button>
+        <span id="answerStatus">CHOOSE ONE ANSWER</span>
+        <button class="primary-btn next-btn" id="nextBtn" disabled>
+          Continue <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen result-screen" id="result" hidden>
+      <div class="result-sparkle">✦</div>
+      <p class="eyebrow">THE UNIVERSE HAS ANSWERED</p>
+      <p class="result-overline">YOUR INNER ARCHETYPE</p>
+      <h2 id="resultTitle"></h2>
+      <p class="result-subtitle" id="resultTagline"></p>
+
+      <div class="result-divider"><span>✧</span></div>
+
+      <p class="result-description" id="resultDescription"></p>
+
+      <div class="result-details">
+        <div class="detail-card">
+          <span class="detail-label">YOUR STRONGEST TRAIT</span>
+          <strong id="strongestTrait"></strong>
+        </div>
+        <div class="detail-card">
+          <span class="detail-label">YOUR INNER ELEMENT</span>
+          <strong id="innerElement"></strong>
+        </div>
+      </div>
+
+      <div class="score-section">
+        <div class="score-heading">
+          <span>ARCHETYPE ALIGNMENT</span>
+          <strong id="scoreText"></strong>
+        </div>
+        <div class="score-track">
+          <div id="scoreFill"></div>
+        </div>
+        <p class="score-note">A playful reflection of your answers, not a scientific assessment.</p>
+      </div>
+
+      <p class="closing-quote" id="resultQuote"></p>
+
+      <div class="result-actions">
+        <button class="primary-btn" id="restartBtn">Begin again ↻</button>
+        <button class="secondary-btn" id="shareBtn">Share my result ↗</button>
+      </div>
+      <p class="share-status" id="shareStatus" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>THE HIDDEN SELF</span>
+    <span>MADE OF QUESTIONS & WONDER ✦</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
